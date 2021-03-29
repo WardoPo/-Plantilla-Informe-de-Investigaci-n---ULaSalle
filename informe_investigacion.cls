@@ -3,26 +3,36 @@
 
 \LoadClass{report}
 
+\usepackage{titlesec}
+                                     
+\titleformat{\chapter}{\bfseries\centering\LARGE}{\chaptername\space\Roman{chapter}: }{0pt}{}{}
+\titleformat{\section}{\bfseries}{}{0pt}{}{}
+\titleformat{\subsection}{\bfseries}{\alph{subsection}. }{0pt}{}{}
+
 \newenvironment{resumen}
-{\newpage
-    \section*{Resumen}
+{
+    \begin{center}
+        \chapter*{Resumen}
+    \end{center}
 }
 {}
 
 \renewenvironment{abstract}
-{\newpage
-    \section*{Resumen}
+{
+    \begin{center}
+        \chapter*{Abstract}
+    \end{center}
 }
 {}
   
 \newenvironment{palabras_clave}
-{\newpage
-    \section*{Palabras Clave}
+{
+    \chapter*{Palabras Clave}
 }
 {}
 
 \newenvironment{conclusiones}
-{\newpage
-    \section*{Conclusiones\\}
+{
+    \chapter*{Conclusiones}
 }
 {}

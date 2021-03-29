@@ -5,16 +5,23 @@
 
 \usepackage{titlesec}
 \usepackage{changepage}      
+\usepackage{enumitem}
 
 \titleformat{\chapter}{\bfseries\centering\LARGE}{\chaptername\space\Roman{chapter}: }{0pt}{}{}
 \titleformat{\section}{\bfseries}{}{0pt}{}{}
-\titleformat{\subsection}{\bfseries}{\hspace{0.65cm}\alph{subsection}. }{0pt}{}{}
+\titleformat{\subsection}{\bfseries}{\hspace{0.63cm}\alph{subsection}. }{0pt}{}{}
+
+\setlist[itemize]{left=1.25cm .. 2.5cm}
+\setlist[enumerate]{left=0.63cm .. 1.25cm}
+
+\setlength{\parindent}{0pt}
 
 \newenvironment{resumen}
 {
     \begin{center}
         \chapter*{Resumen}
     \end{center}
+    \setlist[itemize]{left=0.63cm .. 1.88cm}
 }
 {}
 
@@ -36,6 +43,7 @@
 {
     \subsection{#1}
     \begin{adjustwidth}{1.25cm}{}
+    \setlist[itemize]{left=0 .. 1.25cm}
 }
 {
     \end{adjustwidth}

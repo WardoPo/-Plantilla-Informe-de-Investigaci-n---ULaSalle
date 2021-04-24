@@ -18,18 +18,14 @@
 
 \newenvironment{resumen}
 {
-    \begin{center}
-        \chapter*{Resumen}
-    \end{center}
+    \chapter*{Resumen}
     \setlist[itemize]{left=0.63cm .. 1.88cm}
 }
 {}
 
 \renewenvironment{abstract}
 {
-    \begin{center}
-        \chapter*{Abstract}
-    \end{center}
+     \chapter*{Abstract}
 }
 {}
   
@@ -43,7 +39,7 @@
 {
     \subsection{#1}
     \begin{adjustwidth}{1.25cm}{}
-    \setlist[itemize]{left=0 .. 1.25cm}
+    \setlist[itemize]{left=0cm .. 1.25cm}
 }
 {
     \end{adjustwidth}

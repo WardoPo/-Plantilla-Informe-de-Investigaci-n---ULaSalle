@@ -1,16 +1,22 @@
 \begin{titlepage}
 
-    \includegraphics[width=0.4\textwidth]{imagenes/La Salle Logo.png}
+    \includegraphics[width=0.4\textwidth]{Imagenes/La Salle Logo.png}
     
         \begin{center}
             \vspace*{1cm}
-            \textbf{ESCUELA PROFESIONAL DE INGENIERÍA DE SOFTWARE}
+            \large{\textbf{ESCUELA PROFESIONAL DE INGENIERÍA DE SOFTWARE}}
+            
             
             \vspace{1.5cm}
-            [TITULO DEL  INFORME DE INVESTIGACIÓN]
+            \makeatletter
+            \large{\@title}
+            \makeatother
+            
             
             \vspace{1.5cm}
-            [Autor]
+            \makeatletter
+            \@author
+            \makeatother
             
             \vspace{1.5cm}
             [Grado a obtener]
@@ -20,7 +26,9 @@
             AREQUIPA – PERÚ
             
             \vspace{0.5cm}
-            [Año]
+            \makeatletter
+            \@date
+            \makeatother
         \end{center}
 
 \end{titlepage}

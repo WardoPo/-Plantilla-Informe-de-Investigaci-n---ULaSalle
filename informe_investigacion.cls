@@ -14,6 +14,15 @@
 \setlist[itemize]{left=1.25cm .. 2.5cm}
 \setlist[enumerate]{left=0.63cm .. 1.25cm}
 
+\newcounter{descriptcount}
+\renewcommand*\thedescriptcount{\alph{descriptcount}}
+
+\setlist[description]{before={\setcounter{descriptcount}{0}},font=\normalfont\stepcounter{descriptcount}\thedescriptcount)\qquad\quad,leftmargin = 0cm}
+
+\renewcommand{\descriptionlabel}[1]{%
+  \hspace\labelsep \upshape\bfseries #1:%
+}
+
 \setlength{\parindent}{0pt}
 
 \newenvironment{resumen}

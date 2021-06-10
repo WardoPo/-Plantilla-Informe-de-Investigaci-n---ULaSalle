@@ -2,6 +2,7 @@
 \ProvidesClass{informe_investigacion}[2021/03/28 Clase para Informe de Investigación creado por WardoPo]
 
 \LoadClass{report}
+\linespread{1.5}
 
 \usepackage{titlesec}
 \usepackage{changepage}      
